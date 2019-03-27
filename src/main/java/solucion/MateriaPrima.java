@@ -9,4 +9,10 @@ public class MateriaPrima extends Item {
     public MateriaPrima(String id) {
         super(id);
     }
+
+    @Override
+    public void sinStock(Fabrica fabrica) {
+        fabrica.ordenarMateriaPrima(this);
+    }
+
 }

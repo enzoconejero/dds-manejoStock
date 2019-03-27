@@ -15,7 +15,7 @@ public abstract class Item {
 
     public Item(String id) {
         this.id = id;
-        this.cantidad = 0;
+        this.cantidad = 1;
     }
 
     public void agregarCantidad(int cantidad) {
@@ -55,5 +55,6 @@ public abstract class Item {
 
     }
 
+    public abstract void sinStock(Fabrica fabrica);
 
 }

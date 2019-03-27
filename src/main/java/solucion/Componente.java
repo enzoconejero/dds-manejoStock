@@ -1,6 +1,5 @@
 package solucion;
 
-import java.awt.event.ItemEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +15,11 @@ public class Componente extends Item {
     public Componente(String id) {
         super(id);
         this.items = new ArrayList<Item>();
+    }
+
+    @Override
+    public void sinStock(Fabrica fabrica) {
+        fabrica.construirComponente(this);
     }
 
     public void agregarItem(Item item){
