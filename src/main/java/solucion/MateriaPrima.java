@@ -1,9 +1,12 @@
 package solucion;
 
-public class MateriaPrima extends Pieza {
+public class MateriaPrima extends Item {
 
-    public MateriaPrima(String nombre) {
-        super(nombre);
+    public MateriaPrima(int cantidad, String id) {
+        super(cantidad, id);
     }
 
+    public MateriaPrima(String id) {
+        super(id);
+    }
 }
